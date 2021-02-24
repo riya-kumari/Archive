@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    min-height: 800px;
+    max-height: 800px;
+    max-width: 400px;
+    background-color: #302c44;
+  }
+
+  /* ******************* Navigation Bar ***************** */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    /* display: inline; */
+  }
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#navbar li {
+    flex:1;
+    /* border-right: 1px solid #bbb; */
+}
+
+#navbar li a {
+    display: block;
+    /* color: white; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:white
+  }
+#navbar li a:hover:not(.active) {
+    background-color: #111;
+    color:white
+  }
+  
+#current .active {
+    color: black;
+    background-color:white;
+    border-radius : 0px 30px 0px 0px;
+  }
+#saved .active {
+    color: black;
+    background-color:white;
+    border-radius : 30px 0px 0px 0px;
+  }
+.active li a {
+  color:black;
+}
+
+
+/* Current Tabs Window styles */
+#currentTabs {
+  /* background-color:  #302c44; */
+}
+.currentWindowButtons {
+  
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+
+}
+button {
+    border-radius: 25px;
+    background-color: #4CAF50; 
+    border: 1px solid  #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+  
+  }
+  .note input[type=text]:focus {
+    border: 3px solid #555;
+  }
+/* ********** Custom Checkbox *************************************** */
+  /* Hide the browser's default checkbox */
+  #label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /* background-color: red; */
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+#label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  margin-left: 5%;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+
+/* When the checkbox is checked, add a blue background */
+#label input:checked ~ .checkmark {
+  background-color: #55da59;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#label .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ********** End of Custom Checkbox *************************************** */
+
+#ListOfTabs {
+  width: 100%;
+}
+#ListOfTabs #label{
+  background-color:white;
+  /* border-bottom: 2px solid grey; */
+  display:flex;
+  align-items: center;
+  /* padding-top: 5%; */
+}
+hr{
+
+  height: 20px;
+  /* background-color: rgb(204, 204, 204); */
+  text-align:left;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+
+
+#ListOfTabs #name {
+  /* background-color: bisque; */
+  margin-left: 10%;
+}
+
+.folder_div{
+  /* background-color:beige;
+  width: 100%;
+  display:flex;
+
+  border-bottom: 1px solid #dadada;
+  
+  padding-top: 5%; */
+}
+
+#ListOfFolders{
+  width:100%
+}
+
+#ListOfFolders #label{
+  background-color:white;
+  /* border-bottom: 2px solid grey; */
+  display:flex;
+  align-items: center;
+}
+
+#ListOfFolders #name {
+  /* background-color: bisque; */
+  margin-left: 5%;
+}
+
+
+
+
+
